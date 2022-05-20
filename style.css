@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x:hidden;
+    background: linear-gradient(#FF8BA0,#FFDCD1,#FFDCD1,#FFDCD1,#FFDCD1,#FFDCD1,#FFDCD1,#FFDCD1,#FFDCD1,#FFDCD1,#FFDCD1);
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+
+    transition: 0.6s;
+}
+header.sticky
+{
+    padding:10px 100px;
+    background: #ffa8b5;;
+}
+header .logo
+{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+    margin-left: 50px;
+}
+header ul li a
+{
+    position: relative;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #FF8BA0;
+}
+section
+{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+#welcome
+{
+    position:relative;
+    color:#ff6965;
+    white-space: nowrap;
+    font-size: 7vw;
+    z-index: 9;
+    margin-top: -275px;
+    left: -15px;
+}
+.sec
+{
+    position: relative;
+    top: 9px;
+    padding: 150px 40px;
+    background:#FF8BA0;
+    z-index: 100;
+}
+.sec h2
+{
+    font-size:2.5em;
+    margin-bottom:10px;
+    color:#fff;
+    text-align: center;
+}
+.container
+{
+    height:325px;
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 90px;
+    overflow-x: hidden;
+    top:-300px;
+}
+.container .box
+{
+    position: relative;
+    width:25%;
+    padding:40px;
+    background:#FFDCD1;
+    margin:20px;
+    border-radius: 15px;
+}
+.container .box h3
+{
+    color:#ff6965;
+}
+.container .box p
+{
+    color:#FF8BA0;
+}
+.btn
+{
+    text-decoration: none;
+    padding:8px 30px;
+    border-radius: 40px;
+    background: #ff6965;
+    color:#FFDCD1;
+    position: absolute;
+    top: 200px;
+}
+.btn:hover
+{
+    background:#FF8BA0;
+}
+.footer
+{
+    background-color: #8BAC54;
+    z-index: 1000;
+    height:100px;
+    margin-top:-100px;
+}
+.footer #footerimg
+{
+    width:100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1100;
+    background-color: #FF8BA0;
+    top: -300px;
+    height:300px;
+}
+
+section .footer
+{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact
+{
+    font-size:3em;
+    margin-bottom:10px;
+    color:#fff;
+    position: absolute;
+    top: 50px;
+    left:150px;
+    z-index:2000;
+}
+.contactbtn img
+{
+    width:50px;
+    height: 50px;
+    position:absolute;
+    top:60px;
+    left:600px;
+}
+.contactbtn img:hover
+{
+    opacity: 50%;
+}
+
+#github img
+{
+    left:700px;
+}
+#email img
+{
+    left: 800px;
+    width:70px;
+}
+#disc img
+{
+    left: 920px;
+    width: 70px;
+}
+
+/* --------------------about me-------------*/
+.about 
+{
+    margin-top:200px;
+}

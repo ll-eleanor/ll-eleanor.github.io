@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Eleanor's Website :)</title>
+        <link rel ="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <header>
+            <a href="#" class="logo"><img src="logo.svg" width="50px" height="50px"></a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#text">About</a></li>
+                <li><a href="#footerimg">Contact</a></li>
+            </ul>
+        </header>
+
+        <!--Paralax IMG-->
+        <section>
+            <img src="strbb-back.svg" id="strbb-back">
+            <h2 id="welcome">Welcome!</h2>
+            <img src="cat.svg" id="cat">
+            <img src="strbb-front.svg" id="strbb-front">
+            <img src="strbb-juice.svg" id="strbb-juice">
+        </section>
+        
+        <!--Boxes-->
+        <div class="sec" id="sec">
+            <h2 id="text">
+                Click the boxes to find out more!
+                <br><br><br><br><br><br><br>
+            </h2>
+
+            <div class = "container">
+                <div class="box">
+                    <div class="content">
+                        <h3>About Me</h3>
+                        <p>Find out more about me and my interests :)</p>
+                        <a href="aboutme.html" class="btn">Visit Page</a>
+                    </div>
+                    <div class="icon"></div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <h3>About This Website</h3>
+                        <p>Find out more about the process and inspiration  behind this website.</p>
+                        <a href="aboutsite.html" class="btn">Visit Page</a>
+                    </div>
+                    <div class="icon">
+    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <h3>Nothing</h3>
+                        <p>Idk what to put here I just need a filler lol</p>
+                        <a href="#" class="btn">Visit Page</a>
+                    </div>
+                    <div class="icon">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <section class="footer" id="footer">
+            <img src="footer.svg" id="footerimg"> 
+            <h2 class="contact">Contact Me</h2> 
+            
+            <a href="https://www.instagram.com/ll.eleanor/" class="contactbtn" id="insta"><img src="insta-logo.png"></a>
+            <a href="https://github.com/ll-eleanor" class="contactbtn" id="github"><img src="github-logo.png"></a>
+            <a href="#" class="contactbtn" id="email"><img src="email-logo.png"></a>
+            <a href="#" class="contactbtn" id="disc"><img src="discord-logo.png"></a>
+        </section>
+         
+
+        <script>
+            let strbbback = document.getElementById('strbb-back');
+            let cat = document.getElementById('cat');
+            let welcome = document.getElementById('welcome');
+            let strbbfront = document.getElementById('strbb-front');
+            let strbbjuice = document.getElementById('strbb-juice');
+            const text = document.getElementById('text');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                //welcome.style.top = value * 1.0 + 'px';
+                strbbback.style.top = value * 0.75 + 'px';
+                cat.style.top = value * 0.50 + 'px';
+                strbbfront.style.top = value * 0.25 + 'px';
+                strbbjuice.style.top = value * 0 + 'px';
+
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 480);
+
+                text.style.fontSize = 300 - +window.pageYOffset/12+'%';
+            })
+        </script>
+    </body>
+</html>
